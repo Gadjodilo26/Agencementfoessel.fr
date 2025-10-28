@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mathieu Menuiserie Agencement sur-mesure</title>
+  <meta name="description" content="Menuiserie agencement sur-mesure : créations durables, finitions soignées, conseils honnêtes. Demandez un devis gratuit.">
+  <link rel="canonical" href="https://www.exemple.fr">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mathieu Menuiserie Agencement">
+  <meta property="og:description" content="Créations en bois sur-mesure, durables et soignées.">
+  <meta property="og:image" content="assets/img/BackgroundHeader.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Ajout par souci de clarté : meilleure police Google Fonts si nécessaire -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-atelier">
+  <div class="background-stack" aria-hidden="true">
+    <div class="background-layer is-active"></div>
+    <div class="background-layer"></div>
+  </div>
+  <div id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header>
+    <div class="container">
+      <nav role="navigation" class="nav" aria-label="Navigation principale">
+        <a href="/" class="brand" aria-label="Accueil Mathieu">
+          <span class="brand-logo" aria-hidden="true"></span>
+          <span>Mathieu</span>
+        </a>
+        <div class="menu" id="primary-nav" aria-label="Liens">
+          <a href="#services">Services</a>
+          <a href="#realisations">Réalisations</a>
+          <a href="#apropos">À propos</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="burger" aria-label="Ouvrir le menu de navigation" aria-controls="primary-nav" aria-expanded="false" tabindex="0">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- HERO -->
+    <section class="hero container reveal" aria-labelledby="hero-title" data-bg="assets/img/BackgroundHeader.png">
+      <div class="kicker">Précision & équerré parfaite · Bois noble</div>
+      <h1 id="hero-title">Menuiserie & agencement qui traversent le temps</h1>
+      <p>Créations en bois aux finitions soignées, réalisées avec exigence.<br> Du croquis à la pose, échanges clairs, délais tenus, et respect des lieux.</p>
+      <a class="cta" href="#contact">Demander un devis gratuit</a>
+    </section>
+    <!-- SERVICES -->
+    <section id="services" class="section container reveal" data-bg="assets/img/a3bc7728.png">
+      <h2>Services</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="chip">Sur-mesure</div>
+          <h3>Agencements intérieurs</h3>
+          <p>Dressings, bibliothèques, meubles TV, rangements intégrés.<br>Optimisation d’espace et finitions nettes.</p>
+        </article>
+        <article class="card">
+          <div class="chip">Atelier</div>
+          <h3>Menuiserie</h3>
+          <p>Portes, plinthes, tablettes, reprises & ajustements.<br>Pose soignée, matériaux adaptés.</p>
+        </article>
+        <article class="card">
+          <div class="chip">Pose</div>
+          <h3>Cuisine & SDB</h3>
+          <p>Implantation, découpes, ajustements au millimètre.<br>Étanchéité, alignements & propreté de chantier.</p>
+        </article>
+      </div>
+    </section>
+    <!-- RÉALISATIONS -->
+    <section id="realisations" class="section container reveal" data-bg="assets/img/a6b0df5d.png">
+      <h2>Réalisations</h2>
+      <p class="section-intro">Vue d’ensemble de projets récents, classés par type d’intervention avec défilement photo.</p>
+      <div class="carousel-groups" data-carousels></div>
+    </section>
+    <!-- À PROPOS -->
+    <section id="apropos" class="section container reveal" data-bg="assets/img/01de9c5a.png">
+      <h2>À propos</h2>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Rigueur & écoute</h3>
+          <p>Formé à la menuiserie-agencement, j’allie précision, sens du détail et accompagnement honnête. Chaque projet est documenté (matériaux, délais, étapes) : pas de surprise.</p>
+          <a class="cta" href="a-propos.html">Découvrir ma méthode</a>
+        </article>
+        <article class="card">
+          <h3>Zones d’intervention</h3>
+          <p>Déplacements sur votre secteur. Propreté de chantier, respect des lieux et finitions contrôlées.</p>
+          <ul>
+            <li>Diagnostic & prise de mesures</li>
+            <li>Proposition claire & devis</li>
+            <li>Fabrication & Pose</li>
+            <li>Suivi & conseils d’entretien</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="section container reveal" data-bg="assets/img/BackgroundHeader.png">
+      <h2>Contact</h2>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Parlons de votre projet</h3>
+          <p>Expliquez vos besoins (dimensions, usage, style). Le clic prépare un email complet : vous n’avez plus qu’à l’envoyer.</p>
+          <form id="precontact-form" class="precontact-form">
+            <div class="field">
+              <label for="precontact-name">Votre nom *</label>
+              <input id="precontact-name" name="name" type="text" required autocomplete="name" placeholder="Ex. Marie Dupont">
+            </div>
+            <div class="field">
+              <label for="precontact-email">Votre email *</label>
+              <input id="precontact-email" name="email" type="email" required autocomplete="email" placeholder="vous@exemple.fr">
+            </div>
+            <div class="field">
+              <label for="precontact-phone">Téléphone (facultatif)</label>
+              <input id="precontact-phone" name="phone" type="tel" autocomplete="tel" placeholder="+33 6 12 34 56 78">
+            </div>
+            <div class="field">
+              <label for="precontact-type">Type de projet *</label>
+              <select id="precontact-type" name="type" required>
+                <option value="">Sélectionner…</option>
+                <option value="Agencement intérieur">Agencement intérieur</option>
+                <option value="Agencement extérieur">Agencement extérieur</option>
+                <option value="Menuiserie sur-mesure">Menuiserie sur-mesure</option>
+                <option value="Rénovation / Finition">Rénovation / Finition</option>
+                <option value="Autre projet bois">Autre projet bois</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="precontact-details">Détails & objectifs *</label>
+              <textarea id="precontact-details" name="details" rows="4" required placeholder="Dimensions, contraintes, style souhaité, délai…"></textarea>
+            </div>
+            <button type="submit" class="cta">Préparer l’email</button>
+            <p class="form-hint">Un brouillon s’ouvre dans votre application mail avec ces informations.</p>
+          </form>
+        </article>
+        <article class="card">
+          <h3>Téléphone</h3>
+          <a class="cta" href="tel:+33000000000">Appeler maintenant</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p><span id="y"></span> Mathieu Menuiserie Agencement</p>
+      <p class="muted">Mentions légales & Confidentialité</p>
+    </div>
+  </footer>
+  <script defer src="assets/js/carousel-data.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</body>
+</html>
