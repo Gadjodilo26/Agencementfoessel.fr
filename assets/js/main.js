@@ -73,8 +73,7 @@ function formatLabel(label) {
     .replace(/([A-ZÉÈÊËÎÏÔÖÙÜÇ])/g, ' $1')
     .replace(/&/g, ' & ')
     .replace(/\s{2,}/g, ' ')
-    .trim()
-    .replace(/\b([a-z])/g, (m) => m.toUpperCase());
+    .trim();
 }
 
 function formatDate(dateStr) {

@@ -127,22 +127,18 @@ header {
   border-bottom: 2px solid var(--c-accent);
 }
 
-.services-simple {
-  align-items: start;
+.services-cards {
+  margin: 2rem 0 2.3rem 0;
+  gap: 1.8rem;
 }
-.services-simple .card {
-  background: rgba(255,255,255,.12);
-  color: rgba(255,255,255,.9);
-  border: 1px solid rgba(255,255,255,.16);
+.services-cards .card {
+  background: rgba(255,255,255,.92);
+  color: var(--c-ink);
+  border: 1px solid rgba(255,255,255,.4);
 }
-.services-simple h3 {
-  margin-top: 0;
-  color: #fff;
-}
-.services-invite {
-  margin-top: 2rem;
-  color: rgba(255,255,255,.85);
-  font-size: 1.08rem;
+.services-cards .chip {
+  background: rgba(255,255,255,.85);
+  border-style: solid;
 }
 
 .logo-break {

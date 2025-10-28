@@ -1,17 +1,18 @@
 // Données de carrousels générées automatiquement à partir du dossier assets/img-carroussel
 window.CAROUSEL_DATA = {
-  "AgencementExtérieur": {
-    "AbrisVélo": {
+  "Aménagement extérieur": {
+    "Constructuion d'un abris de vélo pin marron": {
       "date": "20240515",
       "images": [
+         {
+          "src": "assets/img-carroussel/AgencementExtérieur-AbrisVélo-20240515-2.jpg",
+          "order": 2
+        },
         {
           "src": "assets/img-carroussel/AgencementExtérieur-AbrisVélo-20240515-1.jpg",
           "order": 1
         },
-        {
-          "src": "assets/img-carroussel/AgencementExtérieur-AbrisVélo-20240515-2.jpg",
-          "order": 2
-        },
+       
         {
           "src": "assets/img-carroussel/AgencementExtérieur-AbrisVélo-20240515-3.jpg",
           "order": 3
@@ -29,10 +30,36 @@ window.CAROUSEL_DATA = {
           "order": 6
         }
       ]
+    },
+    "Création d'un habillage de volet de piscine en Garapa": {
+      "date": "20240801",
+      "images": [
+         {
+          "src": "assets/img-carroussel/AménagementExtérieur-CréationVoletPiscine-20240801-4.jpg",
+          "order": 4
+        },
+        {
+          "src": "assets/img-carroussel/AménagementExtérieur-CréationVoletPiscine-20240801-1.jpg",
+          "order": 1
+        },
+        {
+          "src": "assets/img-carroussel/AménagementExtérieur-CréationVoletPiscine-20240801-2.jpg",
+          "order": 2
+        },
+        {
+          "src": "assets/img-carroussel/AménagementExtérieur-CréationVoletPiscine-20240801-3.jpg",
+          "order": 3
+        },
+       
+        {
+          "src": "assets/img-carroussel/AménagementExtérieur-CréationVoletPiscine-20240801-5.jpg",
+          "order": 5
+        }
+      ]
     }
   },
-  "AgencementIntérieur": {
-    "Boutique&Bureau": {
+  "Agencement intérieure": {
+    "Réagencement bureau et boutique de mode": {
       "date": "20250313",
       "images": [
         {
@@ -96,39 +123,15 @@ window.CAROUSEL_DATA = {
           "order": 15
         }
       ]
-    }
-  },
-  "AménagementExtérieur": {
-    "CréationVoletPiscine": {
-      "date": "20240801",
-      "images": [
-        {
-          "src": "assets/img-carroussel/AménagementExtérieur-CréationVoletPiscine-20240801-1.jpg",
-          "order": 1
-        },
-        {
-          "src": "assets/img-carroussel/AménagementExtérieur-CréationVoletPiscine-20240801-2.jpg",
-          "order": 2
-        },
-        {
-          "src": "assets/img-carroussel/AménagementExtérieur-CréationVoletPiscine-20240801-3.jpg",
-          "order": 3
-        },
-        {
-          "src": "assets/img-carroussel/AménagementExtérieur-CréationVoletPiscine-20240801-4.jpg",
-          "order": 4
-        },
-        {
-          "src": "assets/img-carroussel/AménagementExtérieur-CréationVoletPiscine-20240801-5.jpg",
-          "order": 5
-        }
-      ]
-    }
-  },
-  "AménagementIntérieur": {
-    "AccueilJardinEnfant": {
+    },
+    "Aménagement d'un accueil avec casiers pour un Jardin d'enfant": {
       "date": "20240126",
       "images": [
+        
+         {
+          "src": "assets/img-carroussel/AménagementIntérieur-AccueilJardinEnfant-20240126-4.jpg",
+          "order": 4
+        },
         {
           "src": "assets/img-carroussel/AménagementIntérieur-AccueilJardinEnfant-20240126-1.jpg",
           "order": 1
@@ -140,16 +143,17 @@ window.CAROUSEL_DATA = {
         {
           "src": "assets/img-carroussel/AménagementIntérieur-AccueilJardinEnfant-20240126-3.jpg",
           "order": 3
-        },
-        {
-          "src": "assets/img-carroussel/AménagementIntérieur-AccueilJardinEnfant-20240126-4.jpg",
-          "order": 4
         }
+       
       ]
     },
-    "Démontage2StrucureHall": {
+    "Démontages de deux structures dans un hall": {
       "date": "20250306",
       "images": [
+         {
+          "src": "assets/img-carroussel/AménagementIntérieur-Démontage2StrucureHall-20250306-3.jpg",
+          "order": 3
+        },
         {
           "src": "assets/img-carroussel/AménagementIntérieur-Démontage2StrucureHall-20250306-1.jpg",
           "order": 1
@@ -158,10 +162,7 @@ window.CAROUSEL_DATA = {
           "src": "assets/img-carroussel/AménagementIntérieur-Démontage2StrucureHall-20250306-2.jpg",
           "order": 2
         },
-        {
-          "src": "assets/img-carroussel/AménagementIntérieur-Démontage2StrucureHall-20250306-3.jpg",
-          "order": 3
-        },
+       
         {
           "src": "assets/img-carroussel/AménagementIntérieur-Démontage2StrucureHall-20250306-4.jpg",
           "order": 4
@@ -173,18 +174,21 @@ window.CAROUSEL_DATA = {
       ]
     }
   },
-  "Finition": {
-    "AprèsDémolition": {
+
+
+  "Travaux de finition": {
+    "Intervention aprés démolition d'un mur pour réaliser les finitions": {
       "date": "20241125",
       "images": [
+         {
+          "src": "assets/img-carroussel/Finition-AprèsDémolition-20241125-2.jpg",
+          "order": 2
+        },
         {
           "src": "assets/img-carroussel/Finition-AprèsDémolition-20241125-1.jpg",
           "order": 1
         },
-        {
-          "src": "assets/img-carroussel/Finition-AprèsDémolition-20241125-2.jpg",
-          "order": 2
-        },
+       
         {
           "src": "assets/img-carroussel/Finition-AprèsDémolition-20241125-3.jpg",
           "order": 3
@@ -202,10 +206,8 @@ window.CAROUSEL_DATA = {
           "order": 6
         }
       ]
-    }
-  },
-  "Finitions": {
-    "Parquet": {
+    },
+     "Parquet": {
       "date": "20250605",
       "images": [
         {
@@ -231,8 +233,9 @@ window.CAROUSEL_DATA = {
       ]
     }
   },
-  "Menuiserie": {
-    "FabricationPorteStyleGrange": {
+
+  "Menuiserie et restauration de meuble ancien": {
+    "Fabrication porte style Grange et mise en place de vitrage sur colombage": {
       "date": "20250407",
       "images": [
         {
@@ -260,10 +263,8 @@ window.CAROUSEL_DATA = {
           "order": 6
         }
       ]
-    }
-  },
-  "RestaurationMeuble": {
-    "Marqueterie": {
+    },
+     "Restauration d'une marqueterie": {
       "date": "20221010",
       "images": [
         {
@@ -283,10 +284,8 @@ window.CAROUSEL_DATA = {
           "order": 4
         }
       ]
-    }
-  },
-  "RénovationMobilier": {
-    "AérogommageArmoire": {
+    },
+     "Aérogommage d'une armoire et d'une commode": {
       "date": "20250520",
       "images": [
         {
