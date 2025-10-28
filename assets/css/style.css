@@ -12,6 +12,12 @@
   --space: 2.4rem;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* --- Reset léger & typographie --- */
 html {
   scroll-behavior: smooth;
@@ -25,6 +31,7 @@ body {
   line-height: 1.75;
   letter-spacing: 0.01em;
   position: relative;
+  overflow-x: hidden;
 }
 
 .background-stack {
@@ -402,10 +409,54 @@ header {
   font-size: .88rem;
   color: var(--c-muted);
 }
+.contact-info {
+  margin: 0 0 1.2rem 0;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.contact-info a {
+  color: var(--c-ink);
+  text-decoration: none;
+}
+.contact-info a:hover,
+.contact-info a:focus-visible {
+  color: var(--c-accent);
+}
 @media (max-width: 640px) {
   .precontact-form .cta {
     width: 100%;
     text-align: center;
+  }
+}
+
+.about-intro {
+  align-items: center;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about-text h2 {
+  margin-top: 0;
+}
+.about-photo {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 4px);
+}
+@media (max-width: 760px) {
+  .about-intro {
+    gap: 1.2rem;
+  }
+  .about-photo {
+    max-height: 420px;
   }
 }
 

@@ -253,7 +253,7 @@ if (carouselRoot && Object.keys(carouselData).length) {
 
 // ====== Préformulaire de contact ======
 const precontactForm = document.getElementById('precontact-form');
-const targetMail = 'contact@exemple.fr';
+const targetMail = 'fm.multiservices@outlook.fr';
 
 if (precontactForm) {
   precontactForm.addEventListener('submit', (event) => {

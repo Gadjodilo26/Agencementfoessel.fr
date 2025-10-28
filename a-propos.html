@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FM Multiservices · Menuiserie & agencement sur-mesure</title>
-  <meta name="description" content="Menuiserie agencement sur-mesure : créations durables, finitions soignées, conseils honnêtes. Demandez un devis gratuit.">
-  <link rel="canonical" href="https://www.exemple.fr">
+  <title>À propos · FM Multiservices</title>
+  <meta name="description" content="Découvrez la démarche de Matthieu Foessel, menuisier agenceur passionné par les projets sur mesure et le travail bien fait.">
+  <link rel="canonical" href="https://www.exemple.fr/a-propos">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="FM Multiservices · Menuiserie & agencement sur-mesure">
-  <meta property="og:description" content="Créations en bois sur-mesure, durables et soignées.">
+  <meta property="og:title" content="À propos · FM Multiservices">
+  <meta property="og:description" content="Un accompagnement sur-mesure, rigoureux et humain pour vos projets bois.">
   <meta property="og:image" content="assets/img/Backcornerground.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Ajout par souci de clarté : meilleure police Google Fonts si nécessaire -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -29,14 +28,14 @@
   <header>
     <div class="container">
       <nav role="navigation" class="nav" aria-label="Navigation principale">
-        <a href="/" class="brand" aria-label="Accueil Fm multiservices">
+        <a href="index.html" class="brand" aria-label="Accueil Fm multiservices">
           <img src="assets/img/logo.png" class="brand-logo" alt="Fm multiservices">
           <span>FM multiservices</span>
         </a>
         <div class="menu" id="primary-nav" aria-label="Liens">
-          <a href="#services">Services</a>
-          <a href="#realisations">Réalisations</a>
-          <a href="#apropos">À propos</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#realisations">Réalisations</a>
+          <a href="#apropos" aria-current="page">À propos</a>
           <a href="#contact">Contact</a>
         </div>
         <button class="burger" aria-label="Ouvrir le menu de navigation" aria-controls="primary-nav" aria-expanded="false" tabindex="0">
@@ -49,64 +48,51 @@
   </header>
 
   <main id="contenu">
-    <!-- HERO -->
-    <section class="hero container reveal" aria-labelledby="hero-title" data-bg="assets/img/Backcornerground.png">
-      <div class="kicker">Précision · Rigeur · Bois noble</div>
-      <h1 id="hero-title">Menuiseries & agencements qui traversent le temps</h1>
-      <p>Créations en bois aux finitions soignées, réalisées avec exigence.<br> Du croquis à la pose, échanges clairs, délais tenus, et respect des lieux.</p>
-      <a class="cta" href="#contact">Demander un devis gratuit</a>
+    <section class="hero container reveal" id="apropos" aria-labelledby="about-title" data-bg="assets/img/Backcornerground.png">
+      <div class="kicker">Précision · Rigueur · Sur-mesure</div>
+      <h1 id="about-title">Le sens du détail au service de vos projets</h1>
+      <p>Une approche artisanale, consciente et tournée vers le dialogue pour des réalisations uniques et durables.</p>
     </section>
-    <!-- SERVICES -->
-    <section id="services" class="section container reveal" data-bg="assets/img/a3bc7728.png">
-      <h2>Services</h2>
-      <div class="grid grid-2 services-cards">
+
+    <section class="section container reveal" data-bg="assets/img/01de9c5a.png">
+      <div class="grid grid-2 about-intro">
+        <article class="card about-text">
+          <h2>Matthieu Foessel</h2>
+          <p>Bonjour,</p>
+          <p>Menuisier agenceur de formation, je suis passionné par le travail manuel, précis et bien réalisé. J'accorde une grande importance à la qualité, à la rigueur et au sens du détail — autant de valeurs qui guident chacun de mes projets.</p>
+          <p>À l'écoute de vos besoins, je conçois et réalise des solutions sur mesure, qu'elles soient classiques ou plus originales. Mon objectif&nbsp;: créer des réalisations solides, esthétiques et durables, qui vous ressemblent.</p>
+          <p>Polyvalent et curieux, je peux intervenir sur des projets variés, y compris en dehors du cadre strict de la menuiserie. J'aime trouver des réponses techniques et créatives à des demandes spécifiques, toujours avec le souci du travail bien fait.</p>
+          <p>Je privilégie un accompagnement basé sur la confiance, l'échange et la satisfaction client. Chaque projet est une collaboration : je suis là pour vous conseiller, vous proposer des idées, et concrétiser votre vision.</p>
+          <p>Vous avez un projet ? N'hésitez pas à me contacter, je serai ravi d'en discuter avec vous.</p>
+          <p><strong>Matthieu FOESSEL</strong></p>
+        </article>
+        <figure class="card about-photo">
+          <img src="assets/img/MathieuFoessel.jpeg" alt="Portrait de Matthieu Foessel">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section container reveal" aria-labelledby="approach-title" data-bg="assets/img/a6b0df5d.png">
+      <h2 id="approach-title">Une méthode claire et transparente</h2>
+      <div class="grid grid-2">
         <article class="card">
-          <div class="chip">Agencement</div>
-          <h3>Agencement sur-mesure</h3>
-          <p>Nous imaginons et réalisons vos espaces : meubles intégrés, rangements, optimisation de volumes. Chaque projet commence par un échange pour valider les possibilités techniques.</p>
+          <h3>Écoute & conception</h3>
+          <p>Chaque échange démarre par vos besoins. Mes plans, propositions et matériaux reflètent fidèlement vos contraintes, vos envies et votre budget.</p>
         </article>
         <article class="card">
-          <div class="chip">Menuiserie</div>
-          <h3>Menuiserie & finitions</h3>
-          <p>Fabrication en atelier, ajustements et pose soignée. Parlons de votre besoin pour définir une solution fidèle à vos attentes et à votre budget.</p>
+          <h3>Fabrication & suivi</h3>
+          <p>Je fabrique en atelier, j'assure la pose et le suivi des finitions, toujours dans un esprit de dialogue. Vous savez où nous en sommes à chaque étape.</p>
         </article>
       </div>
       <a class="cta" href="#contact">Discuter de votre projet</a>
     </section>
-    <!-- RÉALISATIONS -->
-    <section id="realisations" class="section container reveal" data-bg="assets/img/a6b0df5d.png">
-      <h2>Réalisations</h2>
-      <p class="section-intro">Vue d’ensemble de projets récents, classés par type d’intervention avec défilement photo.</p>
-      <div class="carousel-groups" data-carousels></div>
-    </section>
-    <!-- À PROPOS -->
-    <section id="apropos" class="section container reveal" data-bg="assets/img/01de9c5a.png">
-      <h2>À propos</h2>
-      <div class="grid grid-2">
-        <article class="card">
-          <h3>Rigueur & écoute</h3>
-          <p>Formé à la menuiserie-agencement, j’allie précision, sens du détail et accompagnement honnête. Chaque projet est documenté (matériaux, délais, étapes) : pas de surprise.</p>
-          <a class="cta" href="a-propos.html">Découvrir ma méthode</a>
-        </article>
-        <article class="card">
-          <h3>Zones d’intervention</h3>
-          <p>Déplacements sur votre secteur. Propreté de chantier, respect des lieux et finitions contrôlées.</p>
-          <ul>
-            <li>Diagnostic & prise de mesures</li>
-            <li>Proposition claire & devis</li>
-            <li>Fabrication & Pose</li>
-            <li>Suivi & conseils d’entretien</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-    <!-- CONTACT -->
+
     <section id="contact" class="section container reveal" data-bg="assets/img/BackgroundHeader.png">
       <h2>Contact</h2>
       <div class="grid grid-2">
         <article class="card">
           <h3>Parlons de votre projet</h3>
-          <p>Expliquez vos besoins (dimensions, usage, style). Le clic prépare un email complet : vous n’avez plus qu’à l’envoyer.</p>
+          <p>Expliquez vos besoins (dimensions, usage, style). Le clic prépare un email complet : vous n'avez plus qu'à l'envoyer.</p>
           <form id="precontact-form" class="precontact-form">
             <div class="field">
               <label for="precontact-name">Votre nom *</label>
@@ -136,7 +122,7 @@
               <textarea id="precontact-details" name="details" rows="4" required placeholder="Dimensions, contraintes, style souhaité, délai…"></textarea>
             </div>
             <button type="submit" class="cta">Préparer l’email</button>
-            <p class="form-hint">Un brouillon s’ouvre dans votre application mail avec ces informations.</p>
+            <p class="form-hint">Un brouillon s'ouvre dans votre application mail avec ces informations.</p>
           </form>
         </article>
         <article class="card">
@@ -147,9 +133,14 @@
           </p>
           <a class="cta" href="tel:+33650741413">Appeler maintenant</a>
         </article>
+        <article class="card">
+          <h3>Atelier</h3>
+          <p>10 Rue des Écrivains<br>67170 BILWISHEIIM</p>
+        </article>
       </div>
     </section>
   </main>
+
   <footer>
     <div class="container footer-content">
       <div class="footer-brand">
@@ -159,6 +150,7 @@
       <p class="muted">Mentions légales & Confidentialité</p>
     </div>
   </footer>
+
   <script defer src="assets/js/carousel-data.js"></script>
   <script defer src="assets/js/main.js"></script>
 </body>
