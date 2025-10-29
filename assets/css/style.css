@@ -38,7 +38,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Inter', sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Inter', sans-serif;
   color: var(--c-heading);
   text-shadow: 0 8px 24px rgba(0,0,0,.35);
   letter-spacing: .02em;
@@ -122,7 +122,7 @@ header {
   box-shadow: none;
 }
 .brand span {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Inter', sans-serif;
   color: var(--c-brand);
   text-transform: uppercase;
   letter-spacing: .18em;
