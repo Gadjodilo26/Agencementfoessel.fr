@@ -670,6 +670,21 @@ footer {
 footer .muted {
   color: rgba(255,255,255,.6);
 }
+footer .muted a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .muted a:hover,
+footer .muted a:focus-visible {
+  color: var(--c-brand);
+  text-decoration: none;
+}
+
+.heading-dark {
+  color: var(--c-ink);
+  text-shadow: none;
+  letter-spacing: .02em;
+}
 
 /* --- Révélations au scroll --- */
 .reveal { opacity:0; transform:translateY(16px); transition:opacity .65s, transform .65s;}
