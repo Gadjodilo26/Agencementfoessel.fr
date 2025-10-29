@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Trebuchet MS Web';
+  src: url('https://fonts.cdnfonts.com/s/12069/trebuc.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* --- Variables et palette harmonisée --- */
 :root {
   --c-bg: #f5f3ef;       /* ivoire */
@@ -26,7 +34,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS Web', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.03rem;
   color: var(--c-ink);
   background: var(--c-bg);
@@ -38,7 +46,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS Web', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: var(--c-heading);
   text-shadow: 0 8px 24px rgba(0,0,0,.35);
   letter-spacing: .02em;
@@ -362,6 +370,7 @@ header {
 .card:focus-within {
   box-shadow: 0 12px 32px rgba(0,0,0,.10);
 }
+.card h2,
 .card h3 {
   margin: .25rem 0 .6rem 0;
   font-size: 1.22rem;
