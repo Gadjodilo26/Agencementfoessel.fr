@@ -178,6 +178,7 @@ function createCarousel(projectInfo, context) {
 }
 
 function initCarousel(carousel) {
+  const viewport = carousel.querySelector('.carousel-viewport');
   const track = carousel.querySelector('.carousel-track');
   const slides = Array.from(track.children);
   const prev = carousel.querySelector('[data-action="prev"]');
@@ -210,6 +211,94 @@ function initCarousel(carousel) {
     });
   });
 
+  if (viewport && total > 1) {
+    let isDragging = false;
+    let isPointerCaptured = false;
+    let startX = 0;
+    let startY = 0;
+    let deltaX = 0;
+
+    const releasePointer = (event) => {
+      if (isPointerCaptured && typeof viewport.releasePointerCapture === 'function' && event?.pointerId !== undefined) {
+        try {
+          viewport.releasePointerCapture(event.pointerId);
+        } catch (error) {
+          // Ignore release errors
+        }
+      }
+      isPointerCaptured = false;
+    };
+
+    const cancelDrag = (event) => {
+      if (!isDragging) return;
+      isDragging = false;
+      deltaX = 0;
+      viewport.classList.remove('is-dragging');
+      track.style.transition = '';
+      releasePointer(event);
+      update();
+    };
+
+    const handlePointerDown = (event) => {
+      if (!event.isPrimary) return;
+      if (event.pointerType === 'mouse' && event.button !== 0) return;
+      isDragging = true;
+      startX = event.clientX;
+      startY = event.clientY;
+      deltaX = 0;
+      track.style.transition = 'none';
+      viewport.classList.add('is-dragging');
+      if (typeof viewport.setPointerCapture === 'function') {
+        try {
+          viewport.setPointerCapture(event.pointerId);
+          isPointerCaptured = true;
+        } catch (error) {
+          isPointerCaptured = false;
+        }
+      }
+    };
+
+    const handlePointerMove = (event) => {
+      if (!isDragging || !event.isPrimary) return;
+      const viewportWidth = viewport.offsetWidth || 1;
+      deltaX = event.clientX - startX;
+      const deltaY = event.clientY - startY;
+      if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > 12) {
+        cancelDrag(event);
+        return;
+      }
+      const movePercent = (deltaX / viewportWidth) * 100;
+      track.style.transform = `translateX(${(-index * 100) + movePercent}%)`;
+    };
+
+    const handlePointerEnd = (event) => {
+      if (!isDragging || !event.isPrimary) return;
+      isDragging = false;
+      viewport.classList.remove('is-dragging');
+      track.style.transition = '';
+      const previousIndex = index;
+      const threshold = (viewport.offsetWidth || 1) * 0.18;
+      if (Math.abs(deltaX) > threshold) {
+        if (deltaX < 0) {
+          goTo(index + 1);
+        } else {
+          goTo(index - 1);
+        }
+      }
+      if (index === previousIndex) update();
+      deltaX = 0;
+      releasePointer(event);
+    };
+
+    viewport.addEventListener('pointerdown', handlePointerDown);
+    viewport.addEventListener('pointermove', handlePointerMove);
+    viewport.addEventListener('pointerup', handlePointerEnd);
+    viewport.addEventListener('pointercancel', cancelDrag);
+    viewport.addEventListener('pointerleave', (event) => {
+      if (isDragging && event.isPrimary && event.pointerType === 'mouse') handlePointerEnd(event);
+    });
+  }
+
   carousel.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight') {
       event.preventDefault();
@@ -224,8 +313,14 @@ function initCarousel(carousel) {
 }
 
 if (carouselRoot && Object.keys(carouselData).length) {
+  const typePriority = ['Intérieur', 'Extérieur'];
   const typeEntries = Object.entries(carouselData)
-    .sort(([a], [b]) => a.localeCompare(b, 'fr', { sensitivity: 'base' }));
+    .sort(([a], [b]) => {
+      const indexA = typePriority.includes(a) ? typePriority.indexOf(a) : Number.MAX_SAFE_INTEGER;
+      const indexB = typePriority.includes(b) ? typePriority.indexOf(b) : Number.MAX_SAFE_INTEGER;
+      if (indexA !== indexB) return indexA - indexB;
+      return a.localeCompare(b, 'fr', { sensitivity: 'base' });
+    });
 
   typeEntries.forEach(([type, projects]) => {
     const group = document.createElement('article');
