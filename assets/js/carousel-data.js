@@ -108,15 +108,16 @@ window.CAROUSEL_DATA = {
           src: "assets/img-carroussel/Finition-AprèsDémolition-20241125-1.jpg",
           order: 1,
         },
+          {
+          src: "assets/img-carroussel/Finition-AprèsDémolition-20241125-4.jpg",
+          order: 4,
+        },
         {
           src: "assets/img-carroussel/Finition-AprèsDémolition-20241125-2.jpg",
           order: 2,
         },
        
-        {
-          src: "assets/img-carroussel/Finition-AprèsDémolition-20241125-4.jpg",
-          order: 4,
-        },
+      
         {
           src: "assets/img-carroussel/Finition-AprèsDémolition-20241125-5.jpg",
           order: 5,
@@ -127,7 +128,7 @@ window.CAROUSEL_DATA = {
         },
       ],
     },
-    "Pose de parquet": {
+    "Pose de parquet et portes": {
       date: "20250605",
       images: [
         {

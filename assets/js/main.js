@@ -76,14 +76,6 @@ function formatLabel(label) {
     .trim();
 }
 
-function formatDate(dateStr) {
-  if (!dateStr || dateStr.length !== 8) return dateStr || '';
-  const y = dateStr.slice(0, 4);
-  const m = dateStr.slice(4, 6);
-  const d = dateStr.slice(6, 8);
-  return `${d}/${m}/${y}`;
-}
-
 function createCarousel(projectInfo, context) {
   const { type, projectLabel } = context;
   const total = projectInfo.images.length;
@@ -101,7 +93,7 @@ function createCarousel(projectInfo, context) {
   header.appendChild(title);
 
   const meta = document.createElement('span');
-  meta.textContent = `${type} · ${formatDate(projectInfo.date)}`;
+  meta.textContent = type;
   header.appendChild(meta);
 
   const viewport = document.createElement('div');
