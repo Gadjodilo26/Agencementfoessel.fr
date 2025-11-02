@@ -3,7 +3,7 @@ RewriteEngine On
 # Force HTTPS and canonical host
 RewriteCond %{HTTPS} !=on [OR]
 RewriteCond %{HTTP_HOST} !^www\.agancementsfoessel\.fr$ [NC]
-RewriteRule ^(.*)$ https://www.agancementsfoessel.fr/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.agencementsfoessel.fr/$1 [L,R=301]
 
 # Autoriser les URL sans extension .html
 RewriteCond %{REQUEST_FILENAME} !-d
