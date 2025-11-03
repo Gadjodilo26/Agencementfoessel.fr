@@ -65,7 +65,6 @@ if (backgroundLayers.length && backgroundElements.length) {
 }
 
 // ====== Carrousels dynamiques ======
-const carouselRoot = document.querySelector('[data-carousels]');
 const carouselData = (typeof window !== 'undefined' && window.CAROUSEL_DATA) || {};
 
 function formatLabel(label) {
@@ -304,7 +303,10 @@ function initCarousel(carousel) {
   update();
 }
 
-if (carouselRoot && Object.keys(carouselData).length) {
+document.addEventListener('DOMContentLoaded', () => {
+  const carouselRoot = document.querySelector('[data-carousels]');
+  if (!carouselRoot || !Object.keys(carouselData).length) return;
+
   const typePriority = ['Intérieur', 'Extérieur'];
   const typeEntries = Object.entries(carouselData)
     .sort(([a], [b]) => {
@@ -336,7 +338,7 @@ if (carouselRoot && Object.keys(carouselData).length) {
 
     carouselRoot.appendChild(group);
   });
-}
+});
 
 // ====== Préformulaire de contact ======
 const precontactForm = document.getElementById('precontact-form');
